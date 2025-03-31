@@ -18,8 +18,6 @@ public class AboutMe {
             System.out.print("Digite sua Altura: ");
             double altura = scanner.nextDouble();
 
-            // Exibindo os dados coletados
-            System.out.println("\nInformações coletadas:");
             System.out.println("Nome: " + nome + " " + sobrenome);
             System.out.println("Idade: " + idade + " anos");
             System.out.println("Altura: " + altura + " m");
@@ -28,7 +26,7 @@ public class AboutMe {
             System.out.println("Erro: Entrada inválida. Certifique-se de digitar os dados corretamente.");
         } 
         finally {
-            scanner.close(); // Fechando o scanner corretamente
+            scanner.close();
         }
     }
 }
