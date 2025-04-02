@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class VerificacaoChequeEspecial {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,16 +10,17 @@ public class VerificacaoChequeEspecial {
         // Define um limite para o cheque especial
         double limiteChequeEspecial = 500;
 
-        // Verifica se o saque ultrapassa o saldo disponível
+        // Saldo total disponível, considerando o cheque especial
+        double saldoDisponivel = saldo + limiteChequeEspecial;
+
         if (saque <= saldo) {
-            // TODO: Imprimir "Transação realizada com sucesso."
+            System.out.println("Transacao realizada com sucesso.");
+        } else if (saque <= saldoDisponivel) {
+            System.out.println("Transacao realizada com sucesso utilizando o cheque especial.");
         } else {
-            // TODO: Verificar se o saque ultrapassa o limite do cheque especial
-            // Em caso positivo, imprimir "Transacao realizada com sucesso utilizando o cheque especial."
-            // Caso contrário, imprimir "Transacao nao realizada. Limite do cheque especial excedido."
+            System.out.println("Transacao nao realizada. Limite do cheque especial excedido.");
         }
 
-        // Fechar o scanner para evitar vazamentos de recursos
         scanner.close();
     }
 }
