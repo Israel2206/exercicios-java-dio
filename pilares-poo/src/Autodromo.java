@@ -7,7 +7,7 @@ public class Autodromo {
 
         Moto s1000rr = new Moto();
         s1000rr.setChassi("03082007");
-        
+        s1000rr.ligar();
     }
     
 }

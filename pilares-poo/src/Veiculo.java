@@ -1,4 +1,4 @@
-public class Veiculo {
+public abstract class Veiculo {
     private String Chassi;
 
     public String getChassi() {
@@ -7,4 +7,7 @@ public class Veiculo {
     public void setChassi(String chassi) {
         Chassi = chassi;
     }
+    public abstract void ligar();
+
+    
 }
