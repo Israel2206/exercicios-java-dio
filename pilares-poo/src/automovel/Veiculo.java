@@ -1,3 +1,5 @@
+package automovel;
+
 public abstract class Veiculo {
     private String Chassi;
 
